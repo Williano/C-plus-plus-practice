@@ -37,3 +37,12 @@ double calculateAreaOfRoom(double length, double width)
 
     return area;
 }
+
+std::string displayAreaOfRoom(double area)
+{
+    std::cout << " " << std::endl;
+
+    std::cout << "The area of the room is" << area << "meters" << std::endl;
+
+}
+
