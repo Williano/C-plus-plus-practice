@@ -9,7 +9,7 @@
 #include <iostream>
 #include <string>
 
-// Structure to store return type
+// Structure to store multiple return type
 struct LenghtAndWidthReturn
 {
     double length, width;
@@ -19,7 +19,7 @@ struct LenghtAndWidthReturn
 // Function prototypes
 LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser();
 double calculateAreaOfRoom(double length, double width);
-std::string displayAreaOfRoom(double area);
+void displayAreaOfRoom(double area);
 
 
 int main()
@@ -37,15 +37,20 @@ int main()
 
 LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser()
 {
+    LenghtAndWidthReturn lengthAndWidth;
+
     double length, width;
 
-    std::cout << "Enter the length of the room in meters: " << std::endl;
+    std::cout << "Enter the length of the room in meters: ";
     std::cin >> length;
 
-    std::cout << "Enter the width of the room in meters: " << std::endl;
+    std::cout << "Enter the width of the room in meters: ";
     std::cin >> width;
 
-    return {length, width};
+    lengthAndWidth.length = length;
+    lengthAndWidth.width = width;
+
+    return lengthAndWidth;
 }
 
 double calculateAreaOfRoom(double length, double width)
@@ -55,11 +60,11 @@ double calculateAreaOfRoom(double length, double width)
     return area;
 }
 
-std::string displayAreaOfRoom(double area)
+void displayAreaOfRoom(double area)
 {
     std::cout << " " << std::endl;
 
-    std::cout << "The area of the room is" << area << "meters" << std::endl;
+    std::cout << "The area of the room is " << area << " meters" << std::endl;
 
 }
 
