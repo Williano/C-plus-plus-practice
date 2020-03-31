@@ -17,6 +17,10 @@ struct LenghtAndWidthReturn
 
 
 // Function prototypes
+LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser();
+double calculateAreaOfRoom(double length, double width);
+std::string displayAreaOfRoom(double area);
+
 
 LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser()
 {
