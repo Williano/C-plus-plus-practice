@@ -22,6 +22,19 @@ double calculateAreaOfRoom(double length, double width);
 std::string displayAreaOfRoom(double area);
 
 
+int main()
+{
+
+    LenghtAndWidthReturn lengthAndWidth = getLenghtAndWidthOfRoomFromUser();
+
+    double area = calculateAreaOfRoom(lengthAndWidth.length, lengthAndWidth.width);
+
+    displayAreaOfRoom(area);
+
+    std::cin.get();
+    return 0;
+}
+
 LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser()
 {
     double length, width;
