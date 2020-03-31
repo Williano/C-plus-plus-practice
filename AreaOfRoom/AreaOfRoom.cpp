@@ -30,3 +30,10 @@ LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser()
 
     return {length, width};
 }
+
+double calculateAreaOfRoom(double length, double width)
+{
+    double area = length * width;
+
+    return area;
+}
