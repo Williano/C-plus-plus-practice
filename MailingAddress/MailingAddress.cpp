@@ -1,3 +1,12 @@
+/*
+    Program: Mailing Address
+    Description: A C++ program that displays your name and complete mailing
+                address formatted in the manner that you would usually see it
+                on the outside of an envelope.
+    Programmer: William Kpabitey Kwabla
+    Date: 03/30/20
+*/
+
 #include <iostream>
 #include <string>
 
