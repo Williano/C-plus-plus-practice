@@ -1,9 +1,10 @@
 /**
-    Program: Area of  Room
-    Description: A python program that ask user for lenght and width of a room
-                 and compute the area of the room with the user inputs.
+    Program: Area of  Field
+    Description: A C++ program that reads the length and width of a farmer’s
+                 field from the user in feet and Display the area of the field
+                 in acres.
     Programmer: William Kpabitey Kwabla
-    Date: 03/31/20
+    Date: 04/01/20
 */
 
 #include <iostream>
@@ -17,25 +18,25 @@ struct LenghtAndWidthReturn
 
 
 // Function prototypes
-LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser();
-double calculateAreaOfRoom(double length, double width);
-void displayAreaOfRoom(double area);
+LenghtAndWidthReturn getLenghtAndWidthOfFieldFromUser();
+double calculateAreaOfField(double length, double width);
+void displayAreaOfField(double area);
 
 
 int main()
 {
 
-    LenghtAndWidthReturn lengthAndWidth = getLenghtAndWidthOfRoomFromUser();
+    LenghtAndWidthReturn lengthAndWidth = getLenghtAndWidthOfFieldFromUser();
 
-    double area = calculateAreaOfRoom(lengthAndWidth.length, lengthAndWidth.width);
+    double area = calculateAreaOfField(lengthAndWidth.length, lengthAndWidth.width);
 
-    displayAreaOfRoom(area);
+    displayAreaOfField(area);
 
     std::cin.get();
     return 0;
 }
 
-LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser()
+LenghtAndWidthReturn getLenghtAndWidthOfFieldFromUser()
 {
     LenghtAndWidthReturn lengthAndWidth;
 
@@ -55,14 +56,14 @@ LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser()
     return lengthAndWidth;
 }
 
-double calculateAreaOfRoom(double length, double width)
+double calculateAreaOfField(double length, double width)
 {
     double area = length * width;
 
     return area;
 }
 
-void displayAreaOfRoom(double area)
+void displayAreaOfField(double area)
 {
     std::cout << " " << std::endl;
 
