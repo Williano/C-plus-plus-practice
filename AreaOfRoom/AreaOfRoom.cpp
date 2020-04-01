@@ -50,6 +50,8 @@ LenghtAndWidthReturn getLenghtAndWidthOfRoomFromUser()
     lengthAndWidth.length = length;
     lengthAndWidth.width = width;
 
+    //return {length, width}
+
     return lengthAndWidth;
 }
 
