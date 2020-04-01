@@ -1,6 +1,6 @@
 /**
     Program: Area of  Room
-    Description: A python program that ask user for lenght and width of a room
+    Description: A C++ program that ask user for lenght and width of a room
                  and compute the area of the room with the user inputs.
     Programmer: William Kpabitey Kwabla
     Date: 03/31/20
