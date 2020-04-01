@@ -19,8 +19,9 @@ struct LenghtAndWidthReturn
 
 // Function prototypes
 LenghtAndWidthReturn getLenghtAndWidthOfFieldFromUser();
-double calculateAreaOfField(double length, double width);
-void displayAreaOfField(double area);
+double calculateAreaOfFieldInFeets(double length, double width);
+double covertAreaOfFieldFromFeetsToArces(double areaInFeet);
+void displayAreaOfFieldInArces(double areaInArces);
 
 
 int main()
@@ -28,9 +29,9 @@ int main()
 
     LenghtAndWidthReturn lengthAndWidth = getLenghtAndWidthOfFieldFromUser();
 
-    double area = calculateAreaOfField(lengthAndWidth.length, lengthAndWidth.width);
+    double area = calculateAreaOfFieldInFeets(lengthAndWidth.length, lengthAndWidth.width);
 
-    displayAreaOfField(area);
+    displayAreaOfFieldInArces(area);
 
     std::cin.get();
     return 0;
@@ -42,10 +43,10 @@ LenghtAndWidthReturn getLenghtAndWidthOfFieldFromUser()
 
     double length, width;
 
-    std::cout << "Enter the length of the room in meters: ";
+    std::cout << "Enter the length of the field in feet: ";
     std::cin >> length;
 
-    std::cout << "Enter the width of the room in meters: ";
+    std::cout << "Enter the width of the field in feet: ";
     std::cin >> width;
 
     lengthAndWidth.length = length;
@@ -56,18 +57,18 @@ LenghtAndWidthReturn getLenghtAndWidthOfFieldFromUser()
     return lengthAndWidth;
 }
 
-double calculateAreaOfField(double length, double width)
+double calculateAreaOfFieldInFeets(double length, double width)
 {
-    double area = length * width;
+    double areaInFeet = length * width;
 
-    return area;
+    return areaInFeet;
 }
 
-void displayAreaOfField(double area)
+void displayAreaOfFieldInArces(double areaInArces)
 {
     std::cout << " " << std::endl;
 
-    std::cout << "The area of the room is " << area << " meters" << std::endl;
+    std::cout << "The area of the field is " << areaInArces << " arces" << std::endl;
 
 }
 
