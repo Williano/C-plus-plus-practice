@@ -10,6 +10,11 @@
 #include <iostream>
 #include <string>
 
+
+// One Arce constant
+int ONEARCECONSTANT = 45360;
+
+
 // Structure to store multiple return type
 struct LenghtAndWidthReturn
 {
@@ -29,9 +34,11 @@ int main()
 
     LenghtAndWidthReturn lengthAndWidth = getLenghtAndWidthOfFieldFromUser();
 
-    double area = calculateAreaOfFieldInFeets(lengthAndWidth.length, lengthAndWidth.width);
+    double areaInFeets = calculateAreaOfFieldInFeets(lengthAndWidth.length, lengthAndWidth.width);
 
-    displayAreaOfFieldInArces(area);
+    double areaInArces = covertAreaOfFieldFromFeetsToArces(areaInFeets);
+
+    displayAreaOfFieldInArces(areaInArces);
 
     std::cin.get();
     return 0;
@@ -62,6 +69,14 @@ double calculateAreaOfFieldInFeets(double length, double width)
     double areaInFeet = length * width;
 
     return areaInFeet;
+}
+
+
+double covertAreaOfFieldFromFeetsToArces(double areaInFeet)
+{
+    double areaInArces = areaInFeet / ONEARCECONSTANT;
+
+    return areaInArces;
 }
 
 void displayAreaOfFieldInArces(double areaInArces)
