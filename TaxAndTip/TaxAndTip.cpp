@@ -11,4 +11,9 @@
     Date: 04/03/2020
 */
 
+#include <iostream>
+#include <string>
 
+// Constants
+double TAX_CONSTANT = 0.17;
+double TIP_CONSTANT = 0.18;
