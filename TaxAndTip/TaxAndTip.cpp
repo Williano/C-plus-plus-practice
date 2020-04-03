@@ -23,6 +23,90 @@ double askUserForCostOfMealInDollars();
 double calculateTax(double costOfMeal);
 double calculateTip(double costOfMeal);
 double calculateGrandTotalOfMeal(double tax, double tip);
-std::string displayTaxTotal(double tax);
-std::string dislplayTipTotal(double tip);
-std::string displayGrandTotalOfMeal(double grandTotalOfMeal);
+void displayTaxTotal(double tax);
+void dislplayTipTotal(double tip);
+void displayGrandTotalOfMeal(double grandTotalOfMeal);
+
+int main()
+{
+    double costOfMeal, tax, tip, grandTotalCostOfMeal;
+
+    costOfMeal = askUserForCostOfMealInDollars();
+
+    tax = calculateTax(costOfMeal);
+
+    tip = calculateTip(costOfMeal);
+
+    grandTotalCostOfMeal = calculateGrandTotalOfMeal(tax, tip);
+
+    displayTaxTotal(tax);
+
+    dislplayTipTotal(tip);
+
+    displayGrandTotalOfMeal(grandTotalCostOfMeal);
+
+    std::cin.get();
+    return 0;
+}
+
+
+double askUserForCostOfMealInDollars()
+{
+
+    double costOfMeal;
+
+    std::cout << "Enter cost of meal $: ";
+    std::cin >> costOfMeal;
+
+    std::cout << std::endl;
+
+    return costOfMeal;
+}
+
+
+double calculateTax(double costOfMeal)
+{
+
+    double tax = costOfMeal * TAX_CONSTANT;
+
+    return tax;
+}
+
+
+double calculateTip(double costOfMeal)
+{
+    double tip = costOfMeal * TIP_CONSTANT;
+
+    return tip;
+}
+
+
+double calculateGrandTotalOfMeal(double tax, double tip)
+{
+
+    double grand_total_of_meal = tax + tip;
+
+    return grand_total_of_meal;
+}
+
+
+void displayTaxTotal(double tax)
+{
+
+    std::cout << "The total tax is $: " << tax << std::endl;
+}
+
+
+void dislplayTipTotal(double tip)
+{
+
+    std::cout << "The total tip is $: " << tip << std::endl;
+}
+
+
+void displayGrandTotalOfMeal(double grandTotalOfMeal)
+{
+    std::cout << "The grand total for meal including tax and tip is $:" << grandTotalOfMeal << std::endl;
+}
+
+
