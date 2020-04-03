@@ -17,3 +17,12 @@
 // Constants
 double TAX_CONSTANT = 0.17;
 double TIP_CONSTANT = 0.18;
+
+// Function prototypes
+double askUserForCostOfMealInDollars();
+double calculateTax(double costOfMeal);
+double calculateTip(double costOfMeal);
+double calculateGrandTotalOfMeal(double tax, double tip);
+std::string displayTaxTotal(double tax);
+std::string dislplayTipTotal(double tip);
+std::string displayGrandTotalOfMeal(double grandTotalOfMeal);
