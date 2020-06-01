@@ -15,7 +15,13 @@ int computeSumOfPositiveIntegers(int positiveInteger);
 void displaySumOfPositiveIntegers(int sumOfPositiveIntegers);
 
 
-void main() {
+void main()
+{
+   int userPositiveInteger = getPositiveIntegerFromUser();
+
+   int sumOfPositiveIntegers = computeSumOfPositiveIntegers(userPositiveInteger);
+
+   displaySumOfPositiveIntegers(sumOfPositiveIntegers);
 
 }
 
