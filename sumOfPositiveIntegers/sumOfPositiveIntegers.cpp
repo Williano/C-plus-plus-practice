@@ -11,7 +11,7 @@
 
 // Function prototypes
 int getPositiveIntegerFromUser();
-int computeSumOfPositiveIntegers();
+int computeSumOfPositiveIntegers(int positiveInteger);
 void displaySumOfPositiveIntegers();
 
 
@@ -32,9 +32,13 @@ int getPositiveIntegerFromUser()
 }
 
 
-int computeSumOfPositiveIntegers()
+int computeSumOfPositiveIntegers(int positiveInteger)
 {
+    int sumOfPositiveIntegers;
 
+    sumOfPositiveIntegers = (positiveInteger * (positiveInteger + 1)) / 2;
+
+    return sumOfPositiveIntegers;
 }
 
 
