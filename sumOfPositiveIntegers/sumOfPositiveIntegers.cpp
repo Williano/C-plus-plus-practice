@@ -32,6 +32,8 @@ int getPositiveIntegerFromUser()
 {
     int userPositiveInteger;
 
+    std::cout << std::endl;
+
     std::cout << "Please enter the positive integer you want to compute the sum for: " ;
 
     std::cin >> userPositiveInteger;
@@ -52,5 +54,6 @@ int computeSumOfPositiveIntegers(int positiveInteger)
 
 void displaySumOfPositiveIntegers(int sumOfPositiveIntegers)
 {
+    std::cout << std::endl;
     std::cout << "The sum of the first positive integers you entered is " << sumOfPositiveIntegers <<std::endl;
 }
