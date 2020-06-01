@@ -15,7 +15,7 @@ int computeSumOfPositiveIntegers(int positiveInteger);
 void displaySumOfPositiveIntegers(int sumOfPositiveIntegers);
 
 
-void main()
+int main()
 {
    int userPositiveInteger = getPositiveIntegerFromUser();
 
@@ -23,6 +23,8 @@ void main()
 
    displaySumOfPositiveIntegers(sumOfPositiveIntegers);
 
+   std::cin.get();
+   return 0;
 }
 
 
