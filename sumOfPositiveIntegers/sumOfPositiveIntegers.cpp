@@ -12,7 +12,7 @@
 // Function prototypes
 int getPositiveIntegerFromUser();
 int computeSumOfPositiveIntegers(int positiveInteger);
-void displaySumOfPositiveIntegers();
+void displaySumOfPositiveIntegers(int sumOfPositiveIntegers);
 
 
 void main() {
@@ -42,7 +42,7 @@ int computeSumOfPositiveIntegers(int positiveInteger)
 }
 
 
-void displaySumOfPositiveIntegers()
+void displaySumOfPositiveIntegers(int sumOfPositiveIntegers)
 {
-
+    std::cout << "The sum of the first positive integers you entered is " << sumOfPositiveIntegers <<std::endl;
 }
