@@ -1,4 +1,4 @@
-// Concurrency.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Concurrency.cpp : Checking the number of cores or processing units a user's computer has.
 //
 
 #include <iostream>
