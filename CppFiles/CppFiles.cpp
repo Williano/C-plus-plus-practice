@@ -69,14 +69,10 @@ void readDataFromFile()
 
 	inputFileStream.open("Numbers.txt");
 
-	inputFileStream >> number;
-	std::cout << number << std::endl;
-
-	inputFileStream >> number;
-	std::cout << number << std::endl;
-
-	inputFileStream >> number;
-	std::cout << number << std::endl;
+	while (inputFileStream >> number)
+	{
+		std::cout << number << std::endl;
+	}
 
 	inputFileStream.close();
 
