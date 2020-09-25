@@ -9,18 +9,19 @@
 void writeToFile();
 void writeUserInputToFile();
 void readDataFromFile();
+void fstreamFile();
 
 int main()
 {
 
-	readDataFromFile();
+	fstreamFile();
 
 }
 
 void writeToFile()
 {
 	std::ofstream outputFile;
-	outputFile.open("demofile.txt");
+	outputFile.open("demofile.txt", std::ios::out | std::ios::app);
 
 	std::cout << "Now writing data to the file. \n";
 
@@ -69,7 +70,7 @@ void readDataFromFile()
 
 	inputFileStream.open("Numbers.txt");
 
-	if (inputFileStream.fail())
+	if (!inputFileStream.fail())
 	{
 		while (inputFileStream >> number)
 		{
@@ -85,4 +86,33 @@ void readDataFromFile()
 
 
 
+}
+
+void fstreamFile()
+{
+	std::fstream dataFile;
+
+	std::cout << "Opening file....\n";
+
+	dataFile.open("demofile.txt", std::ios::out);
+
+	std::cout << "Now writing data to the file.\n";
+
+	dataFile << "Jones\n";
+	dataFile << "Smith\n";
+
+	dataFile.close();
+
+	std::cout << "Opening file again....\n";
+
+	dataFile.open("demofile.txt", std::ios::out | std::ios::app);
+
+	std::cout << "Writing more data to the file\n";
+
+	dataFile << "Willis\n";
+	dataFile << "Davis\n";
+
+	std::cout << "Now closing the file.\n";
+
+	dataFile.close();
 }
