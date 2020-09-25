@@ -3,15 +3,17 @@
 
 #include <iostream>
 #include <fstream>
+#include <string>
 
 // Function prototypes
 void writeToFile();
 void writeUserInputToFile();
+void readDataFromFile();
 
 int main()
 {
 
-	writeUserInputToFile();
+	readDataFromFile();
 
 }
 
@@ -57,5 +59,25 @@ void writeUserInputToFile()
 
 	outputFile.close();
 	std::cout << "Done.\n";
+
+}
+
+void readDataFromFile()
+{
+	std::ifstream inputFileStream;
+	int number;
+
+	inputFileStream.open("Numbers.txt");
+
+	inputFileStream >> number;
+	std::cout << number << std::endl;
+
+	inputFileStream >> number;
+	std::cout << number << std::endl;
+
+	inputFileStream >> number;
+	std::cout << number << std::endl;
+
+	inputFileStream.close();
 
 }
