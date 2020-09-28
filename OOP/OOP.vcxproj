@@ -147,7 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\Budget.cpp" />
     <ClCompile Include="Src\OOP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Budget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
