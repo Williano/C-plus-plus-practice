@@ -32,9 +32,19 @@ public:
 	}
 };
 
+
+template <typename a, typename b>
+a square(a number, b num)
+{
+	return num * number;
+}
+
 int main()
 {
 
+	int numb = square<int, int>(4, 8);
+
+	std::cout << numb << std::endl;
 
 	std::cout << "We will now define a DerivedClass object." << std::endl;
 
