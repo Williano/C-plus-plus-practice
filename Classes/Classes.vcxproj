@@ -147,6 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Src\Rectangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\RectangleExample.cpp" />
+    <ClCompile Include="Src\Rectangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
