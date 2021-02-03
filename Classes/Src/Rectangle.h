@@ -3,26 +3,26 @@
 class Rectangle
 {
 private:
-	double width;
-	double length;
+	double m_width;
+	double m_length;
 
 public:
-	Rectangle(double, double); // Constructor
-	void setWidth(double);
-	void setLength(double);
+	Rectangle(double rectWidth, double rectLength); // Constructor
+	void setWidth(double rWidth);
+	void setLength(double rLength);
 
 	double getWidth() const
 	{
-		return width;
+		return m_width;
 	}
 
 	double getLength() const
 	{
-		return length;
+		return m_length;
 	}
 
 	double getArea() const
 	{
-		return width * length;
+		return m_width * m_length;
 	}
 };
