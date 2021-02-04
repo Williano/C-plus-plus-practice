@@ -10,7 +10,7 @@ private:
 	char* phone;
 
 public:
-	ContactInfo(char* n, char* p)
+	ContactInfo(const char* n, const char* p)
 	{
 		name = new char[strlen(n) + 1];
 		phone = new char[strlen(p) + 1];
