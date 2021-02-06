@@ -18,5 +18,5 @@ public:
 		return m_auxBudget;
 	}
 
-	void addBudget(double budget, Budget& budgetClass);
+	void addBudget(double budget, Budget& corpBudget);
 };
