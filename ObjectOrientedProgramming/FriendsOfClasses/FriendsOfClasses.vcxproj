@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Auxil.cpp" />
+    <ClCompile Include="Src\Budget.cpp" />
     <ClCompile Include="Src\FriendOfClassExample.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
