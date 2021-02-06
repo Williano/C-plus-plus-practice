@@ -33,7 +33,7 @@ int main()
 	}
 
 
-	std::cout << std::showpoint << std::setprecision(2);
+	std::cout << std::fixed << std::showpoint << std::setprecision(2);
 	std::cout << "\nHere are the division budget requests:\n";
 
 
@@ -41,11 +41,11 @@ int main()
 	{
 		std::cout << "\tDivision " << (count + 1) << "\t\t$";
 		std::cout << divisions[count].getDivisionBudget() << std::endl;
-		std::cout << "\tAuxiliary office:\t$";
+		std::cout << "\tAuxiliary office:\t$ ";
 		std::cout << auxOffices[count].getDivisionBudget() << std::endl << std::endl;
 	}
 
-	std::cout << "Total Budget Requests:\t$";
+	std::cout << "Total Budget Requests:\t$ ";
 	std::cout << divisions[0].getCorpBudget() << std::endl;
 
 	std::cin.get();
