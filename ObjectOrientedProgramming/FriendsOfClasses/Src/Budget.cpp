@@ -1,4 +1,7 @@
 #include "Budget.h"
-#include "Auxil.h"
 
+double Budget::m_corpBudget = 0;
 
+void Budget::mainOffice(double mOfficeRequest)
+{
+}
