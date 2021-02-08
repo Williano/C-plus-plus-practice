@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <iostream>
 #include <string>
@@ -23,6 +23,6 @@ public:
 	{
 		std::cout << "Last name: " << m_lastName << std::endl;
 		std::cout << "First name: " << m_firstName << std::endl;
-		std::cout << "Office number " << m_officeNumber << std::endl;
+		std::cout << "Office number: " << m_officeNumber << std::endl;
 	}
 };
