@@ -23,6 +23,9 @@
     <ClInclude Include="Src\Instructor.h" />
     <ClInclude Include="Src\TextBook.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\ClassAggregationExample.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
