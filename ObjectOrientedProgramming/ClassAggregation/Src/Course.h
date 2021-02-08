@@ -14,7 +14,7 @@ private:
 	TextBook m_textbook;
 
 public:
-	Course(std::string course, std::string instrLastName, std::string instrFirstName, std::string instrOffice, std::string textTitle, std::string author, std::string publisher) : m_courseName(course), m_instructor(instrLastName, instrLastName, instrOffice), m_textbook(textTitle, author, publisher) {}
+	Course(std::string course, std::string instrLastName, std::string instrFirstName, std::string instrOffice, std::string textTitle, std::string author, std::string publisher) : m_courseName(course), m_instructor(instrLastName, instrFirstName, instrOffice), m_textbook(textTitle, author, publisher) {}
 
 	void print() const
 	{
