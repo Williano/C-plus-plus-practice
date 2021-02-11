@@ -18,7 +18,10 @@ public:
 		m_numMissed = 0;
 	}
 
-	FinalExam(int questions, int missed) : m_numQuestions(questions), m_pointsEach(0.0), m_numMissed(missed) {}
+	FinalExam(int questions, int missed)
+	{
+		set(questions, missed);
+	}
 
 	void set(int questions, int missed);
 
