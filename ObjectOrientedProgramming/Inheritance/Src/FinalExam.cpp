@@ -7,9 +7,9 @@ void FinalExam::set(int questions, int missed)
 	m_numQuestions = questions;
 	m_numMissed = missed;
 
-	m_pointsEach = 100.0;
+	m_pointsEach = 100.0 / m_numQuestions;
 
-	numericScore = 100 - (missed * m_pointsEach);
+	numericScore = 100.0 - (missed * m_pointsEach);
 
 	setScore(numericScore);
 }
