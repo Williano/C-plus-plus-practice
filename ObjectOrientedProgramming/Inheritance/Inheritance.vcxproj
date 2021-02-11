@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="Src\FinalExam.cpp" />
     <ClCompile Include="Src\GradedActivity.cpp" />
+    <ClCompile Include="Src\InheritanceExample.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
