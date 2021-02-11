@@ -151,6 +151,7 @@
     <ClInclude Include="Src\GradedActivity.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Src\FinalExam.cpp" />
     <ClCompile Include="Src\GradedActivity.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
