@@ -31,4 +31,9 @@ public:
 	{
 		return m_pointsEach;
 	}
+
+	int getNumMissed() const
+	{
+		return m_numMissed;
+	}
 };
