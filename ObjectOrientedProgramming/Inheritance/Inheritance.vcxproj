@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Src\FinalExam.h" />
     <ClInclude Include="Src\GradedActivity.h" />
   </ItemGroup>
   <ItemGroup>

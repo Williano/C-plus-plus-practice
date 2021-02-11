@@ -18,6 +18,9 @@
     <ClInclude Include="Src\GradedActivity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Src\FinalExam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\GradedActivity.cpp">
