@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Rectangle.h">
+    <ClInclude Include="Src\Cube.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cube.h">
+    <ClInclude Include="Src\Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Example.cpp">
+    <ClCompile Include="Src\Example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
