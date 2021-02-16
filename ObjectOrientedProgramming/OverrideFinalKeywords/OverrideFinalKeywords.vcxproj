@@ -150,6 +150,9 @@
     <ClInclude Include="Src\Base.h" />
     <ClInclude Include="Src\Derived.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Example.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
