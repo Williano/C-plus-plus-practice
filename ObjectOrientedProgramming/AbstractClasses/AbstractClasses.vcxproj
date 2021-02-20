@@ -150,6 +150,9 @@
     <ClInclude Include="Src\CsStudent.h" />
     <ClInclude Include="Src\Student.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\CsStudent.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
