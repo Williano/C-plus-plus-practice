@@ -18,5 +18,8 @@
     <ClInclude Include="Src\Date.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
