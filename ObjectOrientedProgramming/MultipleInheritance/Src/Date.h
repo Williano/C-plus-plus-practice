@@ -11,8 +11,7 @@ protected:
 
 public:
 
-	Date() : m_day(1), m_month(1), m_year(1990) {
-	}
+	Date() : m_day(1), m_month(1), m_year(1990) {}
 
 	Date(int day, int month, int year)
 	{
