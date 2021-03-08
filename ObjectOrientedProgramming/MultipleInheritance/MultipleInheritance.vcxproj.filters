@@ -21,5 +21,8 @@
     <ClInclude Include="Src\Time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Src\DateTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
