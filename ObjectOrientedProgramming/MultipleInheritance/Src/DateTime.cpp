@@ -10,4 +10,6 @@ DateTime::DateTime(int day, int month, int year, int hour, int min, int sec) : D
 void DateTime::showDateTime() const
 {
 	std::cout << getMonth() << "/" << getDay() << "/" << getYear() << " ";
+
+	std::cout << getHour() << ":" << getMin() << ":" << getSec() << std::endl;
 }
